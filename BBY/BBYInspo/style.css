@@ -1,0 +1,64 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #973799;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom right, #973799, #f8c8dc);
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    background-size: cover;
+}
+
+.search-container {
+    margin-top: 30px;
+}
+
+.search-container button {
+    background-color: #ffffff;
+    color: #973799;
+    border: 1px solid #973799;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #973799;
+    color: #ffffff;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #973799;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 300px;
+}
+
+#content {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
