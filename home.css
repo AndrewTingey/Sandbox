@@ -1,0 +1,30 @@
+#zipCodeInput {
+    width: 225px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.search-container {
+    position: relative;
+}
+
+#searchButton {
+    background-color: var(--primary-color);
+    color: var(--textbox-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px; /* Decreased border radius */
+    padding: 5px 10px; /* Decreased padding */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 5px;
+    right: 35px;
+}
+#searchButton:hover {
+    background-color: var(--secondary-color);
+    color: var(--textbox-hover-color);
+    border-color: var(--secondary-color);
+}
+
