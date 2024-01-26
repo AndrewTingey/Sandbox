@@ -1,8 +1,9 @@
 // Get the zip code input element
 const zipCodeInput = document.getElementById('zipCodeInput');
+const cityStateLabel = document.getElementById('cityStateLabel');
 
 // Add an event listener to the zip code input
-zipCodeInput.addEventListener('input', () => {
+zipCodeInput.addEventListener('input', async () => {
     let zipCode = zipCodeInput.value;
 
     // Remove non-numeric characters from the zip code
@@ -23,7 +24,32 @@ zipCodeInput.addEventListener('input', () => {
     // Show or hide the "Go!" button based on the validity of the zip code
     if (isValidZipCode) {
         goButton.style.display = 'block';
+        cityStateLabel.style.display = 'block';
+        var cityState = await getCityState(zipCode);
+        cityStateLabel.textContent = cityState;
+
     } else {
         goButton.style.display = 'none';
+        cityStateLabel.style.display = 'none';
     }
 });
+
+async function getCityState(zipcode) {
+    try {
+        // make API call to get city and state
+        const response = await fetch(`https://api.zippopotam.us/us/${zipcode}`);
+        const data = await response.json();
+
+        // get city and state
+        let city = data.places[0]['place name'];
+        let state = data.places[0]['state abbreviation'];
+
+        // return city and state
+        return `${city}, ${state}`;
+    } catch (error) {
+        console.log(error);
+    }
+
+    // return default city and state
+    return "Las Vegas, NV";
+}

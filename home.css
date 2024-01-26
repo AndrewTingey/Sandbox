@@ -28,3 +28,9 @@
     border-color: var(--secondary-color);
 }
 
+#cityStateLabel {
+    position: absolute;
+    top: 27px;
+    left: 30px;
+    font-size: .75rem;
+}
