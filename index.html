@@ -1,98 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeautyConnect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beauty By You</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="switch.css">
-    <link rel="stylesheet" href="home.css">
 </head>
 
 <body>
+    <div class = "bgimg"></div>
+
     <header>
         <a href="index.html" id="logoLink">
             <img src="images/Test-logo.png" alt="BBY Logo" id="headerLogo">
         </a>
         <nav>
             <ul>
-                <li><a href="register.html" id="registerButton">Register</a></li>
-                <li><a href="login.html" class="navLinks">Login</a></li>
+                <li><a href="index.html" class="navLinks active">Home</a></li>
                 <li><a href="about.html" class="navLinks">About</a></li>
+                <li><a href="login.html" class="navLinks">Login</a></li>
+                <li><a href="register.html" id="joinNowButton">Join Now</a></li>
             </ul>
         </nav>
     </header>
 
-
-    <div class="hero">
-        <h2>Welcome to Beauty By You</h2>
-        <div class="search-container">
-            <button id="findBeautician">Find Beautician</button>
-            <button id="findClients">Find Clients</button>
-            <input type="text" id="searchInput" placeholder="ZIP Code">
-        </div>
-    </div>
-
-
-    <div class="container hero">
-        <h2>Search for</h2>
-        <div class="switches-container">
-          <input type="radio" id="switchClient" name="switchPlan" value="Monthly" checked="checked" />
-          <input type="radio" id="switchService" name="switchPlan" value="Yearly" />
-          <label for="switchClient">Clients</label>
-          <label for="switchService">Beauty Service</label>
-          <div class="switch-wrapper">
-            <div class="switch">
-              <div>Clients</div>
-              <div>Beauty Service</div>
-            </div>
-          </div>
-        </div>
-        <div class="search-container">
-            <button id="searchButton" style="display: none">Search</button>
-            <input type="text" id="zipCodeInput" placeholder="ZIP Code">
-            <p id="cityStateLabel" style="display: none">Las Vegas, NV</p>
-        </div>
-      </div>
-
-
-    <div id="content" style="display: none;">
-       <h2>Beautician Registration</h2>
-    <form id="registrationForm">
-        <div class="form-group">
-                    <label for="firstName">First Name:</label>
-                    <input type="text" id="firstName" name="firstName" required>
-                </div>
-                <div class="form-group">
-                    <label for="lastName">Last Name:</label>
-                    <input type="text" id="lastName" name="lastName" required>
-                </div>
-                <div class="form-group">
-                    <label for="service">Service You Provide:</label>
-                    <select id="service" name="service" required>
-                        <option value="">Select a Service</option>
-                        <option value="hair_stylist">Hair Stylist</option>
-                        <option value="esthetician">Esthetician</option>
-                        <option value="nail_technician">Nail Technician</option>
-                        <option value="waxing">Waxing</option>
-                        <option value="other">Other</option>
-                        <!-- Add more options as needed -->
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="zipCode">Zip Code:</label>
-                    <input type="text" id="zipCode" name="zipCode" required pattern="[0-9]{5}" title="Five digit zip code">
-                </div>
-                <button type="submit">Register</button>
-            </form>
-    </form>
-    </div>
-
-    <footer>
-        <p>© 2024 BBY. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-    <script src="home.js"></script>
+    <header>
+        <h1>BEAUTY BY YOU</h1>
+        <p>Connecting you to your local beauty experts.</p>
+    </header>
+    
 </body>
+
 </html>

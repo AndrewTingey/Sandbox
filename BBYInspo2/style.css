@@ -1,0 +1,122 @@
+:root {
+    --text-color: #0a1924;
+    --background-color: #f0f0f0;
+    --primary-color: #973799;
+    --secondary-color: #f8c8dc;
+    --tertiary-color: #a55e2c;
+    --highlight-color: rgb(190, 130, 180);
+    --hover-highlight-color: rgb(170, 110, 160);
+    --textbox-color: #f0f0f0;
+    --white-color: #ffffff;
+    --footer-color: #333333;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--textbox-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
+    color: var(--textbox-color);
+    text-align: center;
+    padding: 50px 20px;
+    background-size: cover;
+}
+
+.search-container {
+    margin-top: 30px;
+}
+
+.search-container button {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: var(--primary-color);
+    color: var(--textbox-color);
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 300px;
+}
+
+#content {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--footer-color);
+    color: var(--textbox-color);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#headerLogo {
+    width: 140px;
+    margin: 10px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+header nav li {
+    float: right;
+}   
+
+header nav li a {
+    display: block;
+    color: var(--textbox-color);
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+
+header nav li a.navLinks:hover {
+    border-bottom-color: var(--textbox-color);
+}
+
+header nav li a#registerButton:hover {
+    background-color: var(--hover-highlight-color);
+    border-radius: 3    0px;
+}
+
+header nav li a#registerButton {
+    background-color: var(--highlight-color);
+    /* border-bottom-color: var(--textbox-color); */
+    border-radius: 30px;
+}
