@@ -26,9 +26,22 @@
     </header>
 
     <header>
-        <h1>BEAUTY BY YOU</h1>
+        <h1>BEAUTY BY <span style="color: var(--primary-color)">YOU</span></h1>
         <p>Connecting you to your local beauty experts.</p>
     </header>
+
+    <div class="search-container">
+        <div id="search-toggle">
+            <button class="active" id="findBeautician">Find Beautician</button>
+            <button id="findClients">Find Clients</button>
+        </div>
+        <input type="text" id="zipCodeInput" placeholder="ZIP Code">
+        <p id="cityStateLabel" style="display: none">Las Vegas, NV</p>
+
+    </div>
+    <button id="searchButton">Search</button>
+
+    <script src="home.js"></script>
     
 </body>
 
