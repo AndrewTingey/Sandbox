@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Hackathon Web App</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- <script src="map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-N5Ex4f9fOT9TKOa6qrVdOaPkgTz53M4&callback=initMap" async defer></script> -->
+    </head>
+    <body>
+        <button class="back-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left" width="32" height="32"></svg>
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+        </button>
+        <img src="images/uniparkLogo.png" alt="uniparkLogo" id="logo">
+
+        <div class="questionairre">
+            <div class="starter">
+                <img src="images/parking.png" alt="parking" id="parkingimg">
+                <p class="explaination">
+                    UniPark revolutionizes the way you find and reserve parking on your college campus, streamlining the process to ensure convenient access for students. Its intuitive design not only simplifies your campus visits but also encourages carpooling, fostering a more connected and eco-friendly community.
+                </p>
+                <button class="continue button">Get Started</button>
+            </div>
+
+            <div class="question0">
+                <h1 class="welcome">Find Your University...</h1>
+                <input type="text" class="text-input" placeholder="Type here...">
+                <button class="continue button">Continue</button>
+            </div>
+            
+            <div class="question1">
+                <img src="images/BYUSignIn.jpeg" alt="BYUSignIn" id="BYUSignIn">
+                <input type="text" class="text-input BYUInput" id="username" placeholder="NetID">
+                <input type="password" class="text-input BYUInput" id="password" placeholder="NOT A REAL PASSWORD">
+
+                <button class="continue button BYUInput" id="BYUSignIn">Sign In</button>
+            </div>
+    
+            <div class="question2">
+                <button class="button continue reserve">Reserve a Parking Spot</button>
+                <label>
+                    <input type="file" id="file-input" style="display: none;">
+                    <span id="file-input-label">Check In</span>
+                </label>
+            </div>
+
+            <div class="question3">
+                <h1 class="welcome">License Registration</h1>
+                <input type="text" class="text-input licenseNumber" placeholder="License Plate Number" maxlength="8">
+                
+                <h1 class="welcome">Number of Passengers</h1>
+                <select class="dropdown">
+                    <option value="4">4+</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1" selected>1</option>
+                </select>
+                
+                <button class="continue button">Continue</button>
+            </div>
+            
+            <div class ="question4">
+                <h1 class="spot-selection welcome">Reserve a Parking Lot</h2>
+                <ul id="spotsList">
+                    <li>A List item</li>
+                    <li>A List item</li>
+                    <li>A List item</li>
+                </ul>
+            </div>
+
+            <div class="question5">
+            <!-- <div class="question5" onload="initMap()"> -->
+                <button class="continue button" id="confirm">CONFIRM</button>
+                <!-- <div class="map" id="map"></div> -->
+                <img src="images/map.png" class="map" id="map"></img>
+            </div>
+
+            <div class="question6">
+                <img src="images/checkmark.png" alt="checkmark" id="checkmark">
+                <h1 class="welcome">Your reservation has been confirmed</h1>
+                <ul id="confirmationPage">
+                    <li>Time: Mon Jan 10 12:00 pm</li>
+                    <li>West of Lavell Edwards Stadium: Row 3 & 4</li>
+                    <li>Number of Passengers: 3</li>
+                    <li>License Plate Number: 9X4ZM</li>
+                </ul>
+                <button class="continue button">Check in</button>
+            </div>
+
+            <div class="question7"> 
+                <img src="images/qrcode.png" alt="qrcode" id="qrcode">
+                <ul id="checkinList">
+                    <li class="notGood">Passenger 1</li>
+                    <li class="notGood">Passenger 2</li>
+                    <li class="notGood">Passenger 3</li>
+                </ul>
+                <button class="continue button">Park!</button>
+            </div>
+        </div>
+
+        <script src="licenseRegister.js" type="module"></script>
+        <script src="welcome.js"></script>
+    </body>
+</html>
